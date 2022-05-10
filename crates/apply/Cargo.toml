@@ -3,6 +3,7 @@ name = "serde_apply"
 version = "0.1.0"
 edition = "2021"
 license = "MIT"
+authors = ["Simon Rasmussen <zetlon+crates.io@gmail.com>"]
 description = "Partially deserialize and update your struct"
 readme = "../../README.md"
 homepage = "https://github.com/Zagitta/serde_apply"
@@ -11,7 +12,7 @@ documentation = "https://docs.rs/serde_apply"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-serde_apply_macros = { path = "../macros" }
+serde_apply_macros = { path = "../macros", version = "0.1" }
 serde = { version = "1" }
 
 [dev-dependencies]
