@@ -4,6 +4,9 @@ version = "0.1.0"
 edition = "2021"
 license = "MIT"
 readme = "../../README.md"
+homepage = "https://github.com/Zagitta/serde_apply"
+repository = "https://github.com/Zagitta/serde_apply"
+documentation = "https://docs.rs/serde_apply"
 
 [lib]
 proc-macro = true
