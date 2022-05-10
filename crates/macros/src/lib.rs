@@ -1,5 +1,4 @@
 use proc_macro::TokenStream;
-use proc_macro2::Ident;
 use quote::{format_ident, quote};
 use syn::{parse_macro_input, parse_quote, Data, DeriveInput, Field, GenericParam, Generics};
 

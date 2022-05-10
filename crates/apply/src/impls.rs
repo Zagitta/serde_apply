@@ -26,13 +26,15 @@ where
     type PartialType = Option<T::PartialType>;
     #[inline]
     fn apply(&mut self, with: Self::PartialType) {
-        with.map(|val| match self {
-            Some(this) => this.apply(val),
-            None => {
-                let mut this = T::default();
-                this.apply(val);
-                *self = Some(this);
+        if let Some(val) = with {
+            match self {
+                Some(this) => this.apply(val),
+                None => {
+                    let mut this = T::default();
+                    this.apply(val);
+                    *self = Some(this);
+                }
             }
-        });
+        }
     }
 }
