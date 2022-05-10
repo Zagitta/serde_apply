@@ -1,0 +1,18 @@
+[package]
+name = "serde_apply"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Partially deserialize and update your struct"
+readme = "../../README.md"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde_apply_macros = { path = "../macros" }
+serde = { version = "1" }
+
+[dev-dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1" }
+serde_path_to_error = "0.1"
